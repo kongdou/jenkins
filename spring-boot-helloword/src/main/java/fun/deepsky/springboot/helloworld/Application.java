@@ -7,6 +7,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 第一个SpringBoot项目，主类
+ * @author deepsky
+ *
+ */
 @SpringBootApplication
 @RestController
 public class Application {
@@ -19,6 +24,10 @@ public class Application {
 		new SpringApplicationBuilder(Application.class).bannerMode(Mode.OFF).web(true).run(args);
 	}
 	
+	/**
+	 * index页面
+	 * @return
+	 */
 	@RequestMapping("/index")
 	public String index() {
 		return "hello world update test";
