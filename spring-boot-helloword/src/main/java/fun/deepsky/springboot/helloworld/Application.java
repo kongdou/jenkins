@@ -21,6 +21,6 @@ public class Application {
 	
 	@RequestMapping("/index")
 	public String index() {
-		return "hello world";
+		return "hello world update test";
 	}
 }
