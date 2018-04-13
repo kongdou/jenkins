@@ -28,6 +28,6 @@ public class ApplicationTest {
 		String content = result.getResponse().getContentAsString();
 		
 		Assert.assertTrue(status==200);
-		Assert.assertTrue("内容一致", content.equals("hello world"));
+		Assert.assertTrue("内容一致", content.equals("hello world update test"));
 	}
 }
